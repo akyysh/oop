@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       house person1=new house();
+       person person1=new person();
        person1.fio=" Nurbekova Akylai";
        person1.age=20;
        person1.gender="j";

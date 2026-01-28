@@ -1,4 +1,4 @@
-public class house {
+public class person {
       String fio;
       int age;
       String nation;
