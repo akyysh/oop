@@ -8,14 +8,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Customer customer = new Customer("Akylai", "0507849211");
 
-
-        Order myOrder=new Order();
-        myOrder.customer = customer;
-        myOrder.totalPrice = 5000.0;
-
- myOrder.printOrderInfo();
+  String[] studentsss={"AKYLAI",
+          "SHAAMIDIN","TALANT","NYRAIYM","MIRBEK"};
+        Group group=new Group("java-21-ev",studentsss);
+ group.printStudents();
+        System.out.println("--------------------------------");
+        System.out.println(group.addStudent(" MUNARA "));
+        group.printStudents();
+        System.out.println("vsego studentov:"+group.countStudents());
     }
 }
 
