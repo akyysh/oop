@@ -12,7 +12,7 @@ public class Group {
          }
          newStudents[newStudents.length-1]=studentname;
          this.students=newStudents;
-         return studentname+" yspeshno dobavlen v gryppy : "+groupName;
+         return studentname+" yspeshno dobavlen v gryppy : +"+groupName;
 
      }
      public void printStudents() {
