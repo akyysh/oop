@@ -1,6 +1,3 @@
-import com.sun.jdi.request.StepRequest;
-
-import javax.print.attribute.standard.PrinterInfo;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -8,28 +5,29 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("vvedite model apparata:");
+        String userModel= scanner.next();
+        System.out.println("vvedite seny apparata:");
+        int senaApparata= scanner.nextInt();
 
-//  String[] studentsss={"AKYLAI",
-//          "SHAAMIDIN","TALANT","NYRAIYM","MIRBEK"};
-//        Group group=new Group("java-21-ev",studentsss);
-// group.printStudents();
-//        System.out.println("--------------------------------");
-//        System.out.println(group.addStudent(" MUNARA "));
-//        group.printStudents();
-//        System.out.println("vsego studentov:"+group.countStudents());
-//
-       Cat cat=new Cat("misyaa","korolevskaya","red");
-        System.out.println(cat.catMethod());
+        Phone myPhone=new Phone(userModel,senaApparata);
+        System.out.println(" vy yspeshno  sozdali apparat:    ."+
+                myPhone.model+" za   "+myPhone.sena+"  som");
 
-       Cat cat1=new Cat("kisyaa","korolevskaya","black");
-        System.out.println(cat.catMethod());
 
-        Dog dog=new Dog("aktosh","pppp"," black");
-        System.out.println(dog.sssDog());
 
-        Dog dog1=new Dog("sosiska","pdsss"," black");
-        System.out.println(dog.sssDog());
+
+
 
     }
 }
+
+
+
+
+
+
+
+
 
